@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;    
+    color: hsl(215, 51%, 70%);
+    
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    max-width: 375px;
+    padding: 25px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.card_img{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 1rem;    
+}
+
+.image_overlay {
+    background-color: hsla(178, 100%, 50%, 0.229);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    inset: 0;
+    transition: all 0.4s ease-in-out 0s;   
+    border-radius: 1rem; 
+}
+
+.image_overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_img:hover .image_overlay{
+    opacity: 1;
+}
+
+h1 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 20px 0;
+    color: white;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#paragraph-card {
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#conteiner-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#conteiner-card  img {
+    margin-right: 5px;
+}
+
+#days-card, #eth-card {
+    display: flex;
+    align-items: center;
+}
+
+#eth-card {
+    color: hsl(178, 100%, 50%);
+    font-weight: bold
+}
+
+#days-card {
+    font-size: 15px;
+}
+
+hr {
+    margin: 20px 0;
+    border-color: hsl(215, 32%, 27%);
+}
+
+#autor {
+    display: flex;
+    align-items: center;
+}
+
+#autor img{
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#autor span {
+    color: white;
+}
+#autor span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+
+
+
+
+
+
